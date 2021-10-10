@@ -1,0 +1,104 @@
+﻿<Window x:Class="Laminatte.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laminatte"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720 " Width="1280">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="/Resources/fon.png" Stretch="UniformToFill" Grid.Row="0" Grid.RowSpan="2"></Image>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Войти в аккаунт"   x:Name="UserBTN" Background="White" FontSize="20" FontWeight="Bold" Margin="5" Width="250" Click="UserBTN_Click"/>
+            <Button Content="Зарегистрироваться"  x:Name="RegBTN" Background="White" FontSize="20" FontWeight="Bold" Margin="5" Width="250" Click="RegBTN_Click"></Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <Border Margin="10" Background="White" BorderThickness="2" BorderBrush="LightBlue" CornerRadius="10">
+
+                <StackPanel >
+
+                    <Image Source="Resources/1.png" Height="140" Margin="10"/>
+                    <Label Content="JumpAir Basic" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Толщина 18мм" HorizontalAlignment="Center"  FontWeight="Bold"/>
+                    <Label Content="Высокая износостойкость" HorizontalAlignment="Center"/>
+                    <Label Content="Простота конструкции" HorizontalAlignment="Center"/>
+                    <Label Content="Залы площадью не более 200м2" HorizontalAlignment="Center" FontWeight="Bold"/>
+
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label x:Name="Cost1" Content="xxx" FontWeight="Bold" HorizontalContentAlignment="Right"/>
+                            <Label Content="/   М²" FontWeight="Bold" HorizontalContentAlignment="Left"/>
+                        </StackPanel>
+                        <Button x:Name="Tovar1" Content="Купить" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Width="150" Background="White" BorderThickness="2" BorderBrush="LightBlue" Click="Tovar1_Click"></Button>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+            <Border Margin="10" Background="White" BorderThickness="2" BorderBrush="LightBlue" CornerRadius="10">
+
+                <StackPanel>
+                    <Image Source="/Resources/2.jpg" Height="140" Margin="10"/>
+                    <Label Content="Smart-Fit" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Толщина 28мм" HorizontalAlignment="Center"  FontWeight="Bold"/>
+                    <Label Content="Готовая система" HorizontalAlignment="Center"/>
+                    <Label Content="Для общего назначения" HorizontalAlignment="Center"/>
+                    <Label Content="Залы площадью не более 500м2" HorizontalAlignment="Center" FontWeight="Bold"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label x:Name="Cost2" Content="xxx" FontWeight="Bold" HorizontalContentAlignment="Right"/>
+                        <Label Content="/   М²" FontWeight="Bold" HorizontalContentAlignment="Left"/>
+                    </StackPanel>
+                    <Button Click="Tovar2_Click" x:Name="Tovar2" Content="Купить" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Width="150" Background="White" BorderThickness="2" BorderBrush="LightBlue"></Button>
+                </StackPanel>
+            </Border>
+
+            <Border Margin="10" Background="White" BorderThickness="3" BorderBrush="LightBlue" CornerRadius="10">
+                <Grid>
+                    <StackPanel >
+                        <Image Source="/Resources/3.jpg" Height="140" Margin="10"/>
+                        <Label Content="SpringAir Elite" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <Label Content="Толщина 42мм" HorizontalAlignment="Center"  FontWeight="Bold"/>
+                        <Label Content="Сертификаты FIBA, IHF" HorizontalAlignment="Center"/>
+
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label x:Name="Cost3" Content="xxx" FontWeight="Bold" HorizontalContentAlignment="Right"/>
+                            <Label Content="/   М²" FontWeight="Bold" HorizontalContentAlignment="Left"/>
+                        </StackPanel>
+                        <Button Click="Tovar3_Click" x:Name="Tovar3" Content="Купить"  Margin="5" Width="150" Background="White" BorderThickness="2" BorderBrush="LightBlue"></Button>
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+
+            <Border Margin="10" Background="White" BorderThickness="2" BorderBrush="LightBlue" CornerRadius="10">
+                <Grid>
+                    <StackPanel >
+                        <Image Source="/Resources/4.jpg" Height="140" Margin="10"/>
+                        <Label Content="StrongAir Elite" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <Label Content="Толщина 46мм" HorizontalAlignment="Center"  FontWeight="Bold"/>
+                        <Label Content="Профессиональная система" HorizontalAlignment="Center"/>
+                        <Label Content="Сертификаты FIBA, IHF" HorizontalAlignment="Center"/>
+
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label x:Name="Cost4" Content="xxx" FontWeight="Bold" HorizontalContentAlignment="Right"/>
+                            <Label Content="/   М²" FontWeight="Bold" HorizontalContentAlignment="Left"/>
+                        </StackPanel>
+                        <Button Click="Tovar4_Click" x:Name="Tovar4" Content="Купить"  Margin="5" Width="150" Background="White" BorderThickness="2" BorderBrush="LightBlue"></Button>
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="Laminatte.Windows.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laminatte.Windows"
+        mc:Ignorable="d"
+        Title="OrderWindow" Height="350" Width="200">
+    <Grid>
+        <StackPanel >
+
+            <Image Source="/Resources/1.png" Height="140" Margin="10"/>
+            <Label Content="Наименование" HorizontalAlignment="Center" FontWeight="Bold" FontSize="13"/>
+            <Label Content="Уточните количество" HorizontalAlignment="Center" FontWeight="Bold" FontSize="13"/>
+
+            <TextBox TextChanged="Number_TextChanged" x:Name="Number" Width="150" BorderBrush="LightBlue" PreviewKeyDown="Number_PreviewKeyDown" BorderThickness="2"></TextBox>
+            <Label Content="Текущая стоимость:" FontWeight="Bold" HorizontalAlignment="Center" FontSize="12" ></Label>
+            <Label x:Name="AllPriceLabel" Content="xxx" FontWeight="Bold" HorizontalAlignment="Center" FontSize="12" ></Label>
+            <Button x:Name="Tovar1" Click="Tovar1_Click" Content="Подтвердить" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Width="150" Background="White" BorderThickness="2" BorderBrush="LightBlue"></Button>
+
+        </StackPanel>
+    </Grid>
+</Window>
